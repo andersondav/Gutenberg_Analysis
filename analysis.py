@@ -141,7 +141,6 @@ def readWord():
     
     return ''.join(word).lower()
 
-
 def getChapterQuoteAppears(quote):
     file.seek(0)
 
@@ -224,47 +223,29 @@ def generateSentence():
             
 
     return ' '.join(curWords)
-    
-                
 
-print(f'Num words:\n{getTotalNumberOfWords()}')
-print()
-print(f'Num unique:\n{getTotalUniqueWords()}')
-print()
-print(f'20 Most Frequent:\n{get20MostFrequentWords()}')
-print()
-print(f'20 Most Frequent & Interesting:\n{get20MostInterestingFrequentWords()}')
-print()
-print(f'20 Least Frequent:\n{get20LeastFrequentWords()}')
-print()
-print(f'Frequency of "yahoos" by chapter:\n{getFrequencyOfWord("yahoos")}')
-print()
-# print(f'"The author gives some account of himself and family.":\nChapter {getChapterQuoteAppears("The author gives some account of himself and family.")}')
-# print()
-# print(f'"My father had a small estate in Nottinghamshire:"\nChapter {getChapterQuoteAppears("My father had a small estate in Nottinghamshire:")}')
-# print()
-# print('''"When this shower of arrows was over, I fell a groaning
-# with grief and pain; and then striving again to get loose, they
-# discharged another volley larger than the first, and some of them
-# attempted with spears to stick me in the sides;"''')
-# print(f'Chapter {getChapterQuoteAppears("When this shower of arrows was over, I fell a groaning with grief and pain; and then striving again to get loose, they discharged another volley larger than the first, and some of them attempted with spears to stick me in the sides;")}')
-# print()
-# print('"The people had notice, by proclamation, of my design to visit the town."')
-# print(f'Chapter {getChapterQuoteAppears("The people had notice, by proclamation, of my design to visit the town.")}')
-# print()
-print('''"For although few men will avow their
-desires of being immortal, upon such hard conditions, yet in the two
-kingdoms before mentioned, of Balnibarbi and Japan, he observed that
-every man desired to put off death some time longer, let it approach ever
-so late: and he rarely heard of any man who died willingly, except he
-were incited by the extremity of grief or torture."''')
-print(f'Chapter {getChapterQuoteAppears("For although few men will avow their desires of being immortal, upon such hard conditions, yet in the two kingdoms before mentioned, of Balnibarbi and Japan, he observed that every man desired to put off death some time longer, let it approach ever so late: and he rarely heard of any man who died willingly, except he were incited by the extremity of grief or torture.")}')
-print()
-# print('"Yeet"')
-# print(f'Chapter {getChapterQuoteAppears("yeet")}')
-# print()
-print(f'A random sentence:\n{generateSentence()}')
-
+def test():
+    print(f'Num words:\n{getTotalNumberOfWords()}')
+    print()
+    print(f'Num unique:\n{getTotalUniqueWords()}')
+    print()
+    print(f'20 Most Frequent:\n{get20MostFrequentWords()}')
+    print()
+    print(f'20 Most Frequent & Interesting:\n{get20MostInterestingFrequentWords()}')
+    print()
+    print(f'20 Least Frequent:\n{get20LeastFrequentWords()}')
+    print()
+    print(f'Frequency of "yahoos" by chapter:\n{getFrequencyOfWord("yahoos")}')
+    print()
+    print('''"For although few men will avow their
+    desires of being immortal, upon such hard conditions, yet in the two
+    kingdoms before mentioned, of Balnibarbi and Japan, he observed that
+    every man desired to put off death some time longer, let it approach ever
+    so late: and he rarely heard of any man who died willingly, except he
+    were incited by the extremity of grief or torture."''')
+    print(f'Chapter {getChapterQuoteAppears("For although few men will avow their desires of being immortal, upon such hard conditions, yet in the two kingdoms before mentioned, of Balnibarbi and Japan, he observed that every man desired to put off death some time longer, let it approach ever so late: and he rarely heard of any man who died willingly, except he were incited by the extremity of grief or torture.")}')
+    print()
+    print(f'A random sentence:\n{generateSentence()}')
 
 file.close()
 
