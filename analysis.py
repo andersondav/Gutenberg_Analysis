@@ -247,5 +247,6 @@ def test():
     print()
     print(f'A random sentence:\n{generateSentence()}')
 
+test()
 file.close()
 
